@@ -1,0 +1,93 @@
+Here lies the meeting notes of Umbrella Magic's CSC 380 Android Project "You Can't Hide"
+
+01-30-12
+
+1) Group Contract Revisions. Attached.
+
+2) Team Name: Umbrella Magic
+
+3) Project Ideas:  
+                Android App.
+                Gamification of childhood games.
+                Hide and seek using GPS, “bump,” score on server.
+                Voting for next game (what do people want to play?).
+                Implement “bounds” dictated by map and GPS.
+                How do handle tagging?
+                Additional game idea: scavenger hunt.
+                Additional game idea: capture the flag.
+
+4) Project Name: CampusGames
+
+5) Sharing Code: GitHub
+
+Assignment:      
+                All Group Members
+                Deadline: Friday
+                Sign up for GitHub and install the application.
+                Check it out; we will discuss it on Friday. 
+
+
+02-01-13
+
+1) Role division between Web Services project and Software Engineering:
+                Software Engineering:
+                                Get Information (GPS, Accelerometer, Tag, etc.)
+                                Information Presentation (GUI)
+                Web Services:
+                                Website?
+                                Process the Information (Logic)
+                                Database
+
+2) What we need to research / think about:
+                a) How to implement GPS.
+                b) How to incorporate and implement accelerometer.
+                c) How to handle tagging (and how to implement it).
+
+3) Tasks:
+                a) Christopher has emailed the project description and group contract to Dr. Early. [complete]
+                b) Anthony has created a repository, and will try to make it accessible to the group.
+                c) Angie will create the "master report" for the team journal on Angel (starting next week).
+
+Assignment:      
+                All Group Members
+                Deadline: Monday
+                Install Eclipse.
+                Install EGit (http://www.eclipse.org/egit/download/).
+                Install Android SDK.
+
+Assignment:      
+                All Group Members
+                Deadline: Monday
+                When you get an email from Anthony, copy the repository.
+                Make a change to the program (just something trivial, or a comment).
+
+Extra Credit:
+                Get started researching how to implement GPS.
+
+
+02-04-13
+
+1) How do we prevent this app from being used to stalk people?
+                Proposed Solution: We could use  a system of invitations, and stop tracking when someone leaves the game.
+                Extra Credit: If you think of a better way of handling the issue, please let us know!
+
+2) Should we have multiple games in the same app, or should we have a number of apps in the "Campus Games" series?
+                We did not decide on this, so think it over. We will revisit this in a future meeting.
+
+3) Should we skip the meeting on Wednesday?
+                This was proposed after the meeting, since we are ahead of the game, and might not have much to discuss.
+                Please respond with your answer (if you would like to skip the meeting on Wednesday or not) ASAP.
+                If everyone agrees we can skip it, we will meet on Friday, otherwise we will meet on Wednesday, as usual.
+
+Assignment:      
+                All Group Members
+                Deadline: Next Meeting
+                Look over the GPS materials that Christopher emailed on Sunday.
+
+Assignment:      
+                All Group Members
+                Deadline: Next Meeting
+                Brainstorm ways to incorporate the accelerometer.
+                Present your ideas at the next meeting (i.e. have them written down or something)
+
+
