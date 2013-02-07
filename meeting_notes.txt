@@ -91,4 +91,49 @@ Assignment:
                 Present your ideas at the next meeting (i.e. have them written down or something)
 
 
-test
+02-06-13
+
+1) How to handle tagging:
+                The best Idea we have so far is to use GPS to tell who is closest when "it" hits the "tag" button.
+                The person being tagged can confirm or deny.
+                Will there be a penalty for
+
+2) Accelerometer can be used to tell how long each player had been idle (and therefore how well they are hidden).
+                We can keep statistics for how active & how well hidden players are (leading to achievements, or titles, to be unlocked).
+
+3) Additional use of GPS: track how far players have traveled.
+
+4) Name changed to "You Can't Hide" or "You Can't Hide...". What did we decide about the ellipses?
+
+5) Rules ironed out: Combo of "Hide and Seek" and "Manhunt":
+                All players can run to "base," even without being found (for instance if "it" passes by their hiding place).
+                There is a range "too close to hide in" and a range "too far to be in the game."
+                GPS tracks if the person is in an acceptable hiding distance, or if they are in the base, or safe zone.
+
+6) Separate modes for only "it" and for a team of "it"s.
+
+7) Possibly allow for hidden "mines"
+                Other tools like this?
+                Bought through exp?
+
+Assignment:      
+                All Group Members
+                Deadline: Friday
+                Fill out individual weekly report to submit on ANGEL.
+
+Assignment:      
+                All Group Members
+                Deadline: Friday
+                Draw dimple sketches / diagrams of what you would like the interaction with the application to look like.
+                What info should players in different roles have? What buttons do they have at a given time...etc.
+
+Tasks: Ongoing, but please be able to report on you progress for Monday's meeting!
+
+                Christopher's Task: Work on GPS implementation.
+
+                Anthony's Task: Work on web services and database implementation.
+
+                Sean's Task: Create diagrams about how different components relate to and communicate with each other (outline Java class hierarchies where applicable).
+
+                Angie's Task: Work on accelerometer implementation.
+
