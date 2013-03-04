@@ -137,3 +137,45 @@ Tasks: Ongoing, but please be able to report on you progress for Monday's meetin
 
                 Angie's Task: Work on accelerometer implementation.
 
+
+02-11-13
+
+1) The Accelerometer is determined to be a dead end (too gimmicky).
+
+2) We spent most of the time discussing the interaction design of the game, especially at the beginning (logging in, joining the game etc.).
+
+3) Next meeting we will outline our requirements document.
+
+4) We need to have a meeting with Dr. Early. It won't work this week, so we need to work with him to schedule something for next week.
+
+Tasks: Ongoing...
+
+                Christopher's Task: Work on GPS implementation. Figure out those strings!
+
+		                Anthony's Task: Work on web services and database implementation (MySQL).
+
+				                Sean's Task: Create diagrams about how different components relate to and communicate with each other (outline Java class hierarchies where applicable).
+
+						                Angie's Task: Since the accelerometer didn't work out, I will make some "stubs" for the user interface, based on what we discussed today.
+
+								attachment: the diagram of the interaction from the white board.
+
+								CSC380_InteractionDraft.JPG
+
+
+02-20-13
+
+1) Take a look at Umbrello UML Modeller. Thanks to Christopher for the tip.
+
+2) No meeting on Friday (today).
+
+Tasks:
+
+                Sean's Task: Use the hierarchies you have been developing to make UML class diagrams.
+
+		                Angie's Task: I will edit the Requirements Document this weekend (on Google Docs), and print it out on Monday.
+
+
+				Note: Don't forget to do the team journal today!
+
+
