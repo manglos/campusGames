@@ -12,12 +12,12 @@ import java.awt.Color;
  */
 public abstract class Player{
 
-    String firstName, lastName, username, password, phoneNumber;
-    int xp=0;
-    boolean online=false;
-    Color myColor, onlineColor, offlineColor;
-    int loginCount;
-    int numTagged, numBeenTagged; 
+    private String firstName, lastName, username, password, phoneNumber;
+    private int xp=0;
+    private boolean online=false;
+    private Color myColor, onlineColor, offlineColor;
+    private int loginCount, numTagged, numBeenTagged;
+    private String type="undefined";
 
     Player(String fn, String ln, String un, String pw, String pn, int x, boolean on){
         firstName=fn; lastName=ln; username=un; password=pw; phoneNumber = pn; xp=x;
@@ -26,6 +26,8 @@ public abstract class Player{
         myColor=offlineColor;
         setOnline(on);
         loginCount=0;
+        numTagged=0;
+        numBeenTagged=0;
     }
     Player(){}
 
@@ -41,6 +43,12 @@ public abstract class Player{
     void setExperience(int x){
         xp=x;
     }
+    void setType(String s){
+		type=s;
+	}
+	String getType(){
+		return type;
+	}
     String getName(){
         return firstName + " " + lastName;
     }
@@ -90,10 +98,15 @@ public abstract class Player{
         
         online=o;
     }
+    
+	/* this class is abstract to allow
+		 * the server to just send a single
+		 * command to it and runners */
+	abstract void tagHandler();
 
     @Override
     public String toString(){
-        return username + "'s info:\nName: " +getName() +"\nPhone: "+getPhonenumber()+"\nExperience: "+getExperience();
+        return username + "'s info:\nName: " +getName() + "\nPhone: " + getPhonenumber() + "\nExperience: " + getExperience() + " --" + getType();
     }
 	
 }

@@ -4,25 +4,19 @@ public class It extends Player{
 	
 	It(){
 		super();
+		setType("IT");
 		numTaggedThisTurn=0;
 	}
 	It(String fn, String ln, String un, String pw, String pn, int x, boolean on){
 		super(fn, ln, un, pw, pn, x, on);
-		numTaggedThisTurn=0
+		setType("IT");
+		numTaggedThisTurn=0;
 	}
 	
-	//Not sure which will work better
-	void requestTag(){
-		/* here get location and send request to server
-		 * server sends confirm request to clients in range
-		 * clients either confirmTag() or disputeTag() */
+	void tagHandler(){
+		/* It will request tag from server here
+		 * sends location, sents request to others
+		 * gets confirmation and performs action */
 	}
-	void requestTag(Player p){
-		/* here get location and send request to server
-		 * server sends confirm request to clients in range
-		 * clients either confirmTag() or disputeTag() */
-	}
-	
-	
 
 }
