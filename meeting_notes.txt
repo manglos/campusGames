@@ -178,4 +178,39 @@ Tasks:
 
 				Note: Don't forget to do the team journal today!
 
+03-04-13
+
+1) "Pencil" used to create diagram. (http://pencil.evolus.vn/)
+
+2) The Stats we want to keep:
+
+         number other people you’ve tagged
+	 times you’ve been tagged
+	 fastest speed
+	 num games played
+	 num times home
+	 num games hosted
+	 record idle time (hiding?)
+	 successful “it” game
+	 successful “runner” games
+	 num times abandoned games (AWOL)
+	 number of times “kicked” (Weakest Link)
+	 dist travelled
+	 num times disputed tags (runner)
+	 num erroneous tags (liar liar pants on fire)
+	 num times been a boss at life (tagged everyone)
+	 num times been a ninja (hid until game timed-out)
+	 exp: ...
+
+Assignments: Due Wednesday
+
+																				                 Christopher: Create the player-related classes from the UML diagram, and post to Github.
+
+             Anthony: Work on the database. Create the stats class and post to Github.
+
+	     Sean: Post an editable version of the UML diagram. Create the zone-related classes, and post to Github.
+
+             Angie: Create the lobby/game classes, and post to Github.
+
+	     Extra Credit: Update UML diagram with any additional classes.
 
