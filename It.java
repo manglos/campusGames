@@ -10,19 +10,8 @@ public class It extends Player{
 		super(fn, ln, un, pw, pn, x, on);
 		numTaggedThisTurn=0
 	}
-	
-	//Not sure which will work better
-	void requestTag(){
-		/* here get location and send request to server
-		 * server sends confirm request to clients in range
-		 * clients either confirmTag() or disputeTag() */
-	}
-	void requestTag(Player p){
-		/* here get location and send request to server
-		 * server sends confirm request to clients in range
-		 * clients either confirmTag() or disputeTag() */
-	}
-	
+
+	void tagHandler(){}
 	
 
 }

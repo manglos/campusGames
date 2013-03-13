@@ -11,6 +11,6 @@ public class Runner extends Player{
 		numBeenTaggedThisTurn=0;
 	}
 
-	
+	void tagHandler(){}
 
 }

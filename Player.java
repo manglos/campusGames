@@ -41,6 +41,9 @@ public abstract class Player{
     void setExperience(int x){
         xp=x;
     }
+    
+    abstract void tagHandler(){}
+    
     String getName(){
         return firstName + " " + lastName;
     }
