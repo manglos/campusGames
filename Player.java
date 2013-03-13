@@ -1,68 +1,109 @@
 
 import java.awt.Color;
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+public class Player{
 
-/**
- *
- * @author montynewman
- */
-public abstract class Player{
+    private String firstName, lastName, username, password, phoneNumber;
+    private int xp=0;
+    private boolean online=false;
+    private Color myColor, onlineColor, offlineColor;
+    private int loginCount, numTagged, numBeenTagged;
+    private Role myRole=null;
 
-    String firstName, lastName, username, password, phoneNumber;
-    int xp=0;
-    boolean online=false;
-    Color myColor, onlineColor, offlineColor;
-    int loginCount;
-    int numTagged, numBeenTagged; 
-
-    Player(String fn, String ln, String un, String pw, String pn, int x, boolean on){
+    public Player(String fn, String ln, String un, String pw, String pn, int x, boolean on){
         firstName=fn; lastName=ln; username=un; password=pw; phoneNumber = pn; xp=x;
         offlineColor = new Color(0xFF0000);
         onlineColor = new Color(0x23D400);
         myColor=offlineColor;
         setOnline(on);
         loginCount=0;
+        numTagged=0;
+        numBeenTagged=0;
     }
+    public Player(String fn, String ln, String un, String pw, String pn, int x, boolean on, Role r){
+        firstName=fn; lastName=ln; username=un; password=pw; phoneNumber = pn; xp=x;
+        offlineColor = new Color(0xFF0000);
+        onlineColor = new Color(0x23D400);
+        myColor=offlineColor;
+        setOnline(on);
+        myRole=r;
+        loginCount=0;
+        numTagged=0;
+        numBeenTagged=0;
+    }
+    public Player(String fn, String ln, String un, String pw, String pn, int x, boolean on, String r){
+        firstName=fn; lastName=ln; username=un; password=pw; phoneNumber = pn; xp=x;
+        offlineColor = new Color(0xFF0000);
+        onlineColor = new Color(0x23D400);
+        myColor=offlineColor;
+        setOnline(on);
+        loginCount=0;
+        numTagged=0;
+        numBeenTagged=0;
+        setRole(r);
+        
+    }
+    
     Player(){}
 
-    void setName(String fn, String ln){
+    public void setName(String fn, String ln){
         firstName=fn; lastName=ln;
     }
-    void setUsername(String un){
+    public void setUsername(String un){
         username=un;
     }
-    void setPhonenumber(String pn){
+    public void setPhonenumber(String pn){
         phoneNumber=pn;
     }
-    void setExperience(int x){
+    public void setExperience(int x){
         xp=x;
     }
+<<<<<<< HEAD
     
     abstract void tagHandler(){}
     
     String getName(){
+=======
+    public void setRole(Role r){
+		myRole=r;
+	}
+	public void setRole(String r){
+		if(r==null)
+			return;
+		
+		if(r.equalsIgnoreCase("IT"))
+			myRole=new It();
+		else if(r.equalsIgnoreCase("Runner"))
+			myRole=new Runner();
+		else if(r.equalsIgnoreCase("Spectator"))
+			myRole=new Spectator();
+			
+	}
+	public Role getRole(){	
+		return myRole;
+	}
+    public String getName(){
+>>>>>>> 47914cde7f2018b680213dc55c81845cbcc84e4e
         return firstName + " " + lastName;
     }
-    String getUsername(){
+    public String getUsername(){
         return username;
     }
-    String getPhonenumber(){
+    public String getPhonenumber(){
         return phoneNumber;
     }
-    int getExperience(){
+    public int getExperience(){
         return xp;
     }
-    String getPassword(){
+    public String getPassword(){
         return password;
     }
-    void addXP(int x){
+    public void addXP(int x){
 		xp+=x;
 	}
-	void addXP(String action){
+	
+	//This is very VERY temporary
+	public void addXP(String action){
 		if(action.equals("tag")){
 			addXP(100);
 			return;
@@ -80,10 +121,11 @@ public abstract class Player{
 			return;
 		}
 	}
-    boolean isOnline(){
+	
+    public boolean isOnline(){
         return online;
     }
-    void setOnline(boolean o){
+    public void setOnline(boolean o){
         if(o==true){
             myColor=onlineColor;
         }
@@ -96,7 +138,7 @@ public abstract class Player{
 
     @Override
     public String toString(){
-        return username + "'s info:\nName: " +getName() +"\nPhone: "+getPhonenumber()+"\nExperience: "+getExperience();
+        return username + "'s info:\nName: " +getName() + "\nPhone: " + getPhonenumber() + "\nExperience: " + getExperience() + " --" + getRole();
     }
 	
 }

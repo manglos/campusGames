@@ -1,0 +1,7 @@
+To Do List (end of spring break?):
+
+	1) Send GPS information from phone to server
+	2) Save location() info per player
+	3) Create new player sign in which creates new player on servlet
+	4) Create log in activity which communicates with servlet
+	5) Implement Google maps on phone/server
