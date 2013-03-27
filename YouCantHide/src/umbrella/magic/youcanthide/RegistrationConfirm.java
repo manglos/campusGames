@@ -19,6 +19,8 @@ public class RegistrationConfirm extends Activity {
 		
 		// Get the intent and extract the message delivered:
 		Intent intent = getIntent();
+		String firstName = intent.getStringExtra(Registration.EXTRA_FIRST_NAME);
+		String lastName = intent.getStringExtra(Registration.EXTRA_LAST_NAME);
 		String userName = intent.getStringExtra(Registration.EXTRA_USER_NAME);
 		String password = intent.getStringExtra(Registration.EXTRA_PASSWORD);
 		String passwordConfirm = intent.getStringExtra(Registration.EXTRA_PASSWORD_CONFIRM);
@@ -27,7 +29,9 @@ public class RegistrationConfirm extends Activity {
 		// Create the text view:
 		TextView textView = new TextView(this);
 		textView.setTextSize(24);
-		textView.setText("User Name: " + userName + "\n");
+		textView.setText("First Name: " + firstName + "\n");
+		textView.append("Last Name: " + lastName + "\n");
+		textView.append("User Name: " + userName + "\n");
 		textView.append("Password: " + password + "\n");
 		textView.append("Password Confirm: " + passwordConfirm + "\n");
 		textView.append("Phone Number: " + phoneNumber + "\n");

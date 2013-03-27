@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.EditText;
 
 public class Registration extends Activity {
+	public final static String EXTRA_FIRST_NAME = "umbrella.magic.youcanthide.FIRSTNAME";
+	public final static String EXTRA_LAST_NAME = "umbrella.magic.youcanthide.LASTNAME";
 	public final static String EXTRA_USER_NAME = "umbrella.magic.youcanthide.USERNAME";
 	public final static String EXTRA_PASSWORD = "umbrella.magic.youcanthide.PASSWORD";
 	public final static String EXTRA_PASSWORD_CONFIRM = "umbrella.magic.youcanthide.PASSWORD_CONFIRM";
@@ -44,8 +46,14 @@ public class Registration extends Activity {
     public void sendMessage(View view) {
     	// Do something in response to the button...
     	Intent intent = new Intent(this, RegistrationConfirm.class);
+    	// Get the FirstName input:
+    	EditText editText = (EditText) findViewById(R.id.reg_first_name);
+    	String firstName = editText.getText().toString();
+    	// Get the LastName input:
+    	editText = (EditText) findViewById(R.id.reg_last_name);
+    	String lastName = editText.getText().toString();
     	// Get the UserName input:
-    	EditText editText = (EditText) findViewById(R.id.reg_user_name);
+    	editText = (EditText) findViewById(R.id.reg_user_name);
     	String userName = editText.getText().toString();
     	// Get the Password input:
     	editText = (EditText) findViewById(R.id.reg_password);
@@ -65,6 +73,8 @@ public class Registration extends Activity {
     	// int result = sendToWebService(userName, password, passwordConfirm, number);
     	
     	// Go to the next screen:
+    	intent.putExtra(EXTRA_FIRST_NAME, firstName);
+    	intent.putExtra(EXTRA_LAST_NAME, lastName);
     	intent.putExtra(EXTRA_USER_NAME, userName);
     	intent.putExtra(EXTRA_PASSWORD, password);
     	intent.putExtra(EXTRA_PASSWORD_CONFIRM, passwordConfirm);
