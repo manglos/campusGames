@@ -15,6 +15,11 @@ public class Registration extends Activity {
 	public final static String EXTRA_PASSWORD = "umbrella.magic.youcanthide.PASSWORD";
 	public final static String EXTRA_PASSWORD_CONFIRM = "umbrella.magic.youcanthide.PASSWORD_CONFIRM";
 	public final static String EXTRA_PHONE_NUMBER = "umbrella.magic.youcanthide.PHONE_NUMBER";
+	
+	public RegistrationClient myRegClient;
+	
+	TelephonyManager phoneManager;
+	String phoneNumber;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,16 +28,24 @@ public class Registration extends Activity {
     	 * Here we should send a post message with the phone's number to see if the user exists (auto log-in).
     	 * If they exist, we should log them in, and send them to the main screen, otherwise, continue with the registration:
     	 */
+    	myRegClient = new RegistrationClient();
+    	
+    	phoneManager = (TelephonyManager) getApplicationContext().getSystemService(TELEPHONY_SERVICE);
+    	phoneNumber = phoneManager.getLine1Number();
+    	
     	boolean alreadyRegistered = checkAutoLogin();
     	if (! alreadyRegistered) {
     		super.onCreate(savedInstanceState);
     		setContentView(R.layout.activity_registration);
     	}
+    	else{
+    		//code for already registered
+    		System.out.println("Already Registered!!");
+    	}
     }
 
     private boolean checkAutoLogin() {
-		// Stub:
-		return false;
+		return myRegClient.userExists(phoneNumber);
 	}
 
 	@Override
