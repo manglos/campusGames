@@ -1,0 +1,34 @@
+MPX,Microsoft Project for Windows,4.0,ANSI
+10,$,1,2,",",.
+11,2,0,1,8.00,40.00,$10.00/h,$15.00/h,1,0
+12,1,0,480,/,:,am,pm,20,20
+20,Standard,0,1,1,1,1,1,0
+25,1
+25,2,08:00 am,12:00 pm,01:00 pm,05:00 pm
+25,3,08:00 am,12:00 pm,01:00 pm,05:00 pm
+25,4,08:00 am,12:00 pm,01:00 pm,05:00 pm
+25,5,08:00 am,12:00 pm,01:00 pm,05:00 pm
+25,6,08:00 am,12:00 pm,01:00 pm,05:00 pm
+25,7
+30,Project1,,,Standard,13/03/2013,17/04/2013,0,13/03/2013,,$0.00,$0.00,$0.00,0h,0h,0h,0%,0d,0d,0d,0%,,,,,0d,0d
+60,Name,WBS,Outline Level,Duration,Actual Duration,Remaining Duration,% Complete,Start,Finish,Fixed,Milestone,ID,Constraint Type,Priority,Unique ID,Outline Number
+61,1,2,3,40,42,43,44,50,51,80,81,90,91,95,98,99
+70,,0,0,36d,,,,13/03/2013,17/04/2013,No,,0,As Soon As Possible,,0,0
+70,Database,1,1,1d,0d,1d,0%,13/03/2013,13/03/2013,No,No,1,As Soon As Possible,Medium,3,1
+70,Register Activity,2,1,6d,0d,6d,0%,13/03/2013,20/03/2013,No,No,2,As Soon As Possible,Medium,1,2
+70,Register Backend,3,1,6d,0d,6d,0%,13/03/2013,20/03/2013,No,No,3,As Soon As Possible,Medium,8,3
+70,Select-Start Game Backend,4,1,6d,0d,6d,0%,13/03/2013,20/03/2013,No,No,4,As Soon As Possible,Medium,15,4
+70,Select-Start Game Activity,5,1,6d,0d,6d,0%,13/03/2013,20/03/2013,No,No,5,As Soon As Possible,Medium,14,5
+70,Unify,6,1,3d,0.99d,2.01d,33%,21/03/2013,25/03/2013,No,No,6,As Soon As Possible,Medium,318,6
+70,Game Creation Activity,7,1,7d,0d,7d,0%,25/03/2013,02/04/2013,No,No,7,As Soon As Possible,Medium,16,7
+70,Game Creation Backend,8,1,7d,0d,7d,0%,25/03/2013,02/04/2013,No,No,8,As Soon As Possible,Medium,17,8
+70,Lobby Activity,9,1,7d,0d,7d,0%,25/03/2013,02/04/2013,No,No,9,As Soon As Possible,Medium,4,9
+70,Lobby Backend,10,1,7d,0d,7d,0%,25/03/2013,02/04/2013,No,No,10,As Soon As Possible,Medium,10,10
+70,Unify,11,1,4d,0d,4d,0%,03/04/2013,08/04/2013,No,No,11,As Soon As Possible,Medium,124,11
+70,It Activity,12,1,5d,0d,5d,0%,09/04/2013,15/04/2013,No,No,12,As Soon As Possible,Medium,5,12
+70,It Backend,13,1,5d,0d,5d,0%,09/04/2013,15/04/2013,No,No,13,As Soon As Possible,Medium,11,13
+70,Runner Activity,14,1,5d,0d,5d,0%,09/04/2013,15/04/2013,No,No,14,As Soon As Possible,Medium,6,14
+70,Runner Backend,15,1,5d,0d,5d,0%,09/04/2013,15/04/2013,No,No,15,As Soon As Possible,Medium,12,15
+70,Spectator Activity,16,1,5d,0d,5d,0%,09/04/2013,15/04/2013,No,No,16,As Soon As Possible,Medium,7,16
+70,Spectator Backend,17,1,5d,0d,5d,0%,09/04/2013,15/04/2013,No,No,17,As Soon As Possible,Medium,13,17
+70,Unify,18,1,3d,0d,3d,0%,15/04/2013,17/04/2013,No,No,18,As Soon As Possible,Medium,317,18
