@@ -19,6 +19,8 @@ public class RegistrationClient{
 		OutputStream os=null;
 		String hostname = "moxie.oswego.edu";
 	
+		Player p;
+		
 		PrintWriter out;
 		Socket clientSocket = null;
 		BufferedReader in=null;
@@ -71,7 +73,7 @@ public class RegistrationClient{
 	    //This method takes the players phone number and checks if they're registered
 	    public boolean userExists(String phoneNumber){
 	    	//String result=null;
-	    	Player p = null;
+	    	p = null;
 	    	
 	    	if(phoneNumber==null){
 	    		debug="null phoneNumber";
@@ -108,7 +110,7 @@ public class RegistrationClient{
 	    	
 	    		String playerString="create:" + un + " " + pw + " " + fn + " " + ln + " " + pn;
 	    		//String result=null;
-	    		Player p=null;
+	    		p=null;
 					
 				try {		
 					oos.writeObject((String)playerString);
@@ -139,6 +141,9 @@ public class RegistrationClient{
 	   
 	    public String getDebug(){
 	    	return debug;
+	    }
+	    public Player getPlayer(){
+	    	return p;
 	    }
 
 }
