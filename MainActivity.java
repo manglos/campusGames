@@ -5,11 +5,14 @@ import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 
 public class MainActivity extends Activity {
 
-  Button browse, create; //,refresh
+	Button create, refresh; //browse
+	String gamesList[] = {"game1", "game2", "game3"};
 
 	//Game [] games; **********//the array of available games to populate the SlideView
 	
@@ -18,10 +21,18 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		create = (Button) findViewById(R.id.bCreate);
-		browse = (Button) findViewById(R.id.bBrowse);
+		refresh = (Button) findViewById(R.id.bRefresh);
+		
+		ListView games = (ListView) findViewById(R.id.games);
+		
+		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, gamesList);
+		games.setAdapter(adapter);
+		
+		
+		//browse = (Button) findViewById(R.id.bBrowse);
 		//refresh = (Button) findViewById(R.id.bRefresh);
 		
-		
+		/*
 		browse.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
@@ -29,11 +40,13 @@ public class MainActivity extends Activity {
 				//Need to figure out how to call the intent with a Constructor
 				//to send it an array of Game objects
 				
-				Intent ourMenu = new Intent("com.youcanthide.android.gamespage.MENU");
+				Intent ourMenu = new Intent(MainActivity.this, Menu.class);
+				//^ BREAKS
 				startActivity(ourMenu);
 				
 			}
 		});
+		*/
 		
 		/*
 		create.setOnClickListener(new View.OnClickListener() {
